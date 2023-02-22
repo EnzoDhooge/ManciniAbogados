@@ -1,0 +1,145 @@
+.contenedor-principal-background{
+    background-image: url("../../../media/PorqueElegirnos.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(95, 74, 58, 0.7);
+}
+.contenedor-principal-razones{
+    width: 80%;
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    padding: 50px 0;
+    justify-content: space-between;
+    .text-razones{
+        width: 60%;
+        color: #fff;
+        h4{
+            font-size: 1.4rem;
+            font-weight: normal;
+            margin: 0;
+        }
+        h5{
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 40px 0 10px 0;
+            span{
+                font-size: 1.6rem;
+                margin-right: 10px;
+            }
+        }
+        p{
+            color: #ddd;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+    }
+    .contador-razones{
+        width: 24%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .contenedor-contadores{
+            width: 100%;
+            background-color: #ad7f5b;
+            margin: 30px 0;
+            padding: 10px 5px;
+            border-radius: 3px;
+            filter: drop-shadow(7px 7px 7px #272727);
+            p{
+                margin: 0;
+                padding: 0;
+                span{margin-right: 5px;}
+            }
+            .numeros{
+                font-size: 1.4rem;
+                font-weight: normal;
+            }
+            .texto{
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media(max-width: 1400px) {
+        .text-razones{
+            h4{ font-size: 1.2rem; }
+            h5{
+                font-size: 1.3rem;
+                span{
+                    font-size: 1.4rem;
+                }
+            }
+            p{ font-size: 1rem; }
+        }
+        .contador-razones{
+            .contenedor-contadores{
+                .numeros{
+                    font-size: 1.2rem;
+                }
+                .texto{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1100px) {
+        width: 85%;
+        .text-razones{
+            width: 70%;
+        }
+        .contador-razones{
+            width: 28%;
+        }
+    }
+
+    @media(max-width: 900px) {
+        width: 80%;
+        flex-direction: column;
+        .text-razones{
+            width: 100%;
+        }
+        .contador-razones{
+            width: 80%;
+            margin-top: 50px;
+            .contenedor-contadores{
+                border-radius: 20px;
+            }
+        }
+    }
+
+    @media(max-width: 500px) {
+        width: 90%;
+        .text-razones{
+            h4{ font-size: 1.1rem; }
+            h5{
+                font-size: 1.2rem;
+                span{
+                    font-size: 1.3rem;
+                }
+            }
+            p{ 
+                font-size: 0.9rem;
+                text-align: justify;
+            }
+        }
+        .contador-razones{
+            .contenedor-contadores{
+                .numeros{
+                    font-size: 1.1rem;
+                }
+                .texto{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+

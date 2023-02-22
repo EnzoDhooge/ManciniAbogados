@@ -1,0 +1,93 @@
+
+.contenedor-principal-wel {
+    background-image: url("../../../media/slidewelcome.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 700px) {
+        height: 80vh;
+    }
+        
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: hsla(0, 0%, 0%, 0.63);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    div {
+        color: rgb(255, 255, 255);
+        position: relative;
+        width: 85%;
+        margin: auto;
+
+        h1 {
+            font-size: 1.7rem;
+            font-weight: normal;
+        }
+        p{
+            font-weight: bold;
+            font-size: 3.3rem;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    @media(max-width: 1450px) {
+        div {
+            width: 90%;
+            h1 {
+                font-size: 1.4rem;
+            }
+            p{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    @media(max-width: 1150px) {
+        div {
+            width: 90%;
+            h1 {
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    @media(max-width: 900px) {
+        div {
+            width: 90%;
+            h1 {
+                font-size: 1rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    @media(max-width: 450px) {
+        div {
+            width: 90%;
+            h1 {
+                font-size: 0.9rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+

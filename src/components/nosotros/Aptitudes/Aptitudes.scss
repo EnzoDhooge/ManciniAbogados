@@ -1,0 +1,66 @@
+.contenedor-background{
+    background-image: url("../../../media/colaboradores.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.85);
+    padding: 100px 0;
+    margin: 100px 0;
+    @media(max-width: 1100px) { padding: 50px 0; }
+}
+
+.contenedor-principal-aptitudes{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+
+    .aptitud{
+        text-align: center;
+        margin: 0 40px;
+
+        span{
+            color: #F2BC94;
+            font-size: 3rem;
+        }
+        h3{
+            color: #F2BC94;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        p{
+            color: #fff;
+            font-size: 1.2rem;
+        }
+    }
+
+    @media(max-width: 1500px) {
+        width: 80%;
+        .aptitud{
+            margin: 0 30px;
+            span{ font-size: 2.7rem; }
+            h3{ font-size: 1.3rem; }
+            p{ font-size: 1rem; }
+        }
+    }
+
+    @media(max-width: 1100px) {
+        width: 100%;
+        .aptitud{
+            margin: 0 30px;
+            span{ font-size: 2rem; }
+            h3{ font-size: 1.2rem; }
+            p{ font-size: 0.9rem; }
+        }
+    }
+
+    @media(max-width: 850px) {
+        width: 50%;
+        flex-direction: column;
+        .aptitud{ margin: 15px 30px; }
+    }
+
+    @media(max-width: 650px) { width: 70%; }
+
+    @media(max-width: 450px) { width: 85%; }
+}

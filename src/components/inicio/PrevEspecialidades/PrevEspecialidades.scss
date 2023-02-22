@@ -1,0 +1,125 @@
+.contenedor-principal-PE{
+    width: 80%;
+    text-align: center;
+    margin: 100px auto;
+    h2{
+        color: #722620;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .description{
+        color: #ad7f5b;
+        font-size: 1.5rem;
+    }
+    button{
+        color: #fff;
+        background-color: #ad7f5b;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: none;
+    }
+    
+    .contenedor-especialidades{
+        display: grid;
+        grid-gap: 30px 15px;
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+        grid-auto-rows: auto;
+        grid-auto-flow: dense;
+        margin: 40px 0;
+        a{text-decoration: none;}
+        .especialidad{
+            width: 100%;
+            height: 300px;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e7eBeE;
+            border-radius: 3px;
+
+            h3{
+                font-size: 1.5rem;
+                color: #ad7f5b;
+            }
+            p{
+                font-size: 1.2rem;
+                color: #474B4E;
+            }
+
+            &:hover {
+                transition: all 0.7s ease;
+                background-color: #474B4E;
+                p{
+                    transition: all 0.7s ease;
+                    color: #fff
+                }
+            }
+
+            .material-symbols-outlined {
+                color: #ad7f5b;
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media(max-width: 1400px) {
+        h2{ font-size: 1.8rem; }
+        .description{ font-size: 1.3rem; }
+        button{ font-size: 0.9rem; }
+
+        .contenedor-especialidades{
+            .especialidad{
+                h3{
+                    font-size: 1.3rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .material-symbols-outlined {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1100px) {
+        width: 85%;
+        .contenedor-especialidades{
+            .especialidad{
+                h3{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .material-symbols-outlined {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+    @media(max-width: 900px) {
+        width: 80%;
+        .contenedor-especialidades{
+            grid-template-columns: minmax(200px, 1fr);
+        }
+    }
+    @media(max-width: 600px) {
+        h2{ font-size: 1.5rem; }
+        .description{ font-size: 1.2rem; }
+        .contenedor-especialidades{
+            .especialidad{
+                h3{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
